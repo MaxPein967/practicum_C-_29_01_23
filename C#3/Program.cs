@@ -5,11 +5,23 @@
 Console.WriteLine("Введите число: ");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
-int a = - numberN;
-
-while(a<numberN+1)
+if (numberN > 0)
 {
-    Console.Write($" {a}");
-    a++;
+    int a = -numberN;
+    while (a < numberN + 1)
+    {
+        Console.Write($" {a}");
+        a++;
+    }
 }
+else
+{
+    int a = -numberN;
+    while (a > numberN - 1)
+    {
+        Console.Write($" {a}");
+        a--;
+    }
+}
+
 
