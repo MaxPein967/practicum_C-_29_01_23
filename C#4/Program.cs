@@ -15,8 +15,7 @@ if (number >= b && number <= c)
 {
     string strNumber = number.ToString();
     char a = strNumber[strNumber.Length - 1];
-    Console.WriteLine("Число: " + number);
-    Console.WriteLine("Единицы: " + a);
+    Console.WriteLine("Последняя цифра: " + a);
 }
 else
 {
