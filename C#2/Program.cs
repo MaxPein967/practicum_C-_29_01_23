@@ -6,7 +6,18 @@ string[] daysOfWeek = { "Понедельник", "Вторник", "Среда"
 
 Console.WriteLine("Введите день недели: ");
 int number = Convert.ToInt32(Console.ReadLine());
-number = number - 1;
 
-Console.WriteLine(daysOfWeek[number]);
+int a = 1;
+int b = 7;
+
+if (number >= a && number <= b)
+{
+    number = number - 1;
+    Console.WriteLine(daysOfWeek[number]);
+}
+else
+    Console.WriteLine("Не является днем недели");
+    
+
+
 
